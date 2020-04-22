@@ -1,15 +1,29 @@
 import Vue from 'vue'
-import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import VueRouter from 'vue-router'
+Vue.use(VueRouter);
 
-Vue.use(Router)
+import layout from '../view/layout.vue'
+import home from '../view/home/index'
+import news from '../view/news/index'
+import we from '../view/we/index'
 
-export default new Router({
+const router = new VueRouter({
   routes: [
     {
       path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+      redirect: '/layout',
+    },
+    {
+      path: '/layout',
+      name: 'layout',
+      component: layout,
+      children: [
+        { path: '/home', name: 'home', component: home },
+        { path: '/news', name: 'news', component: news },
+        { path: '/we', name: 'we', component: we },
+      ]
     }
   ]
 })
+
+export default router
