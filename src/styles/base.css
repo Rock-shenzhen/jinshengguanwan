@@ -1,3 +1,92 @@
-html,body {
+html,
+body {
     height: 100%;
+}
+
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+iframe,
+pre,
+code,
+fieldset,
+legend,
+form,
+input,
+select,
+textarea,
+button,
+p,
+blockquote,
+th,
+td,
+figure {
+    margin: 0;
+    padding: 0
+}
+
+body,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+iframe,
+pre,
+code,
+fieldset,
+legend,
+form,
+p,
+blockquote,
+figure,
+header,
+footer,
+nav,
+article,
+section,
+aside,
+address,
+figcaption {
+    *zoom: 1
+}
+
+li {
+    list-style: none
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+a:link,
+a:visited,
+a:active,
+a {
+    text-decoration: none;
 }
