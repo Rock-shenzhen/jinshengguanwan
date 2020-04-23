@@ -1,15 +1,17 @@
 <template>
-  <el-container id="home">
-    <el-header>
-      <topBar></topBar>
-    </el-header>
-    <el-main>
-      <router-view></router-view>
-    </el-main>
-    <el-footer>
-      <footed></footed>
-    </el-footer>
-  </el-container>
+  <div id="layout">
+    <!-- <el-container id="home"> -->
+    <!-- <el-header> -->
+    <topBar></topBar>
+    <!-- </el-header> -->
+    <!-- <el-main> -->
+    <router-view></router-view>
+    <!-- </el-main> -->
+    <!-- <el-footer> -->
+    <footed></footed>
+    <!-- </el-footer> -->
+    <!-- </el-container> -->
+  </div>
 </template>
 
 <script>
